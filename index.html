@@ -5,28 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        p{ color: blue;
-            font-size: 30px;
+        html     { font-size: 16px; }   /* root */
+.parent  { font-size: 20px; }
 
-        }
-        .box{
-             width: 200px;
-            height: 100px;
-            padding: 20px;
-            border: 2px solid blue;
-             margin: 10px;
-            }
+.em-text  { font-size: 2em; }   /* 2 × 20px (parent) = 40px */
+.rem-text { font-size: 2rem; }  /* 2 × 16px (root)   = 32px */
         
-        #intro{
-            color: black;
-        }
-        .note{
-            color: green;
-        }
     </style>
     <link rel="stylesheet" href="style.css">
   </head>
 <body>
+   <div class="parent">
+  <p class="em-text">I use em</p>
+  <p class="rem-text">I use rem</p>
+</div>
+
+
+    
     <header>
         <h1>Hi-Tech Institute of Engineering and Technology</h1>
         <p>B.Tech CSE (AI & ML)</p>
@@ -71,5 +66,11 @@
         <p style="color: pink; ">This is my pink paragraph</p>
 
     </footer>
+    <div>
+        <p>Child</p>
+    <div>
+     <p>Child P 2</p>
+
+
 </body>
 </html>
